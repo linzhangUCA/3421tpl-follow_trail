@@ -1,8 +1,8 @@
-# Distance Control
-Use the encoders to sense the distance that your robot has traveled. Code your robot's behaviors accordingly. Use the taped markers on the ground to verify sensed distance and robot control. 
+# Trail Following
+Implement a more precised motion control to follow the taped trapezoid on the ground. Use the encoders to sense and adjust your robot's pose (position and orientation). 
 
 ## Instructions:
-1. (80%) Complete `distance_control.py` perform the following sequential movements. 
+1. (80%) Complete `trail_follower.py` perform the following sequential movements. 
 
    Initially, place the robot on the **`0.5`** meters mark. By starting your program, the robot should be automatically perform the following sequence.
    1. Drive forward.
