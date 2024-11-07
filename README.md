@@ -19,7 +19,7 @@ Implement a more precised motion control to follow the taped trapezoid on the gr
 > Hint:
 > 1. Wanna drive your robot straight? Read encoder counts on both motors and compare them to regulate motors' on/off states.
 > 2. Turn at a certain angle: $s = r \cdot \theta$, where $s$ is the arc length, $r$ is half of the wheel separation distance, $\theta$ is the turning angle
-![arc_length](https://calcworkshop.com/wp-content/uploads/arc-length-formula.png)
+![](https://calcworkshop.com/wp-content/uploads/arc-length-formula.png)
 
 ### 2 (20%) Upload a video which records the entire navigation process. 
 You'll want to modify lines in your [code](trail_follow.py) to reduce the stop time on each checkpoint. 
