@@ -5,6 +5,7 @@ Implement a more precised motion control to follow the taped trapezoid on the gr
 
 ## Requiements:
 ### 1 (80%) Complete [`trail_follow.py`](trail_follow.py) in this repository. 
+**Please upload all customized python module or template scripts (e.g. `sensored_motor_driver.py`)**
 
    Initially, place the robot's driving wheel axle center (**AC**) right on top of the starting point (`checkpoint 4`). Align the robot's heading direction to point `checkpoint 1` 
    1. (15%) Let the robot follow the trail from `checkpoint 4` to `checkpoint 1`. Based on the encoder feedback and calculation, stop the robot when **AC** is less than 0.05 m to the `checkpoint 1` (**the closer the better**). 
@@ -20,7 +21,7 @@ Implement a more precised motion control to follow the taped trapezoid on the gr
 > 1. Wanna drive your robot straight? Read encoder counts on both motors and compare them to regulate motors' on/off states.
 > 2. Turn at a certain angle: $s = r \cdot \theta$, where $s$ is the arc length in **meters**, $r$ is half of the wheel separation distance in **meters**, $\theta$ is the turning angle in **radians**.
 
-![arc_length](arc_length.png)
+![arc_length](arc-length-formula.png)
 
 ### 2 (20%) Upload a video which records the entire navigation process. 
 You'll want to modify lines in your [code](trail_follow.py) to reduce the stop time on each checkpoint. 
