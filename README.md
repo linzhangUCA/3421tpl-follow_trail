@@ -1,7 +1,7 @@
 # Trail Follower
 Implement a more precised motion control to follow the taped trapezoid on the ground. Use the encoders to sense and adjust your robot's pose (position and orientation). 
 
-![trail_follower](trail_follower.png)
+![trail_follower](./trail_follower.png)
 
 ## Requiements:
 ### 1 (80%) Complete [`trail_follow.py`](trail_follow.py) in this repository. 
