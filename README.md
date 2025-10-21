@@ -7,12 +7,9 @@ Use the encoders to sense and adjust your robot's pose (position and orientation
 
 ## Requirements
 
-> [!IMPORTANT]
-> Demo your robot to Dr. Zhang to redeem the credits.
+### (30%) 1. Plan Trajectories
 
-### 1. Plan Trajectories
-
-#### 1.1. Encoder Guided Linear Motion
+#### (10%) 1.1. Encoder Guided Linear Motion
 
 Assume your robot will drive **straight** forward for a desired distance, $d$.
 The encoder counts, $C$, on both motors will increase to a targeted value, synchronously.
@@ -27,7 +24,9 @@ You can use following definitions in your equation:
 > If other quantities than the listed ones are needed.
 > Please introduce them in math language.
 
-#### 1.2. Encoder Guided Angular Motion
+> Write down linear motion function below.
+
+#### (20%) 1.2. Encoder Guided Angular Motion
 
 Assume your robot will spin around the center of the wheel axle for a desired angle, $\theta$.
 The encoder counts on left motor, $C_l$, and the encoder counts on right motor $C_r$, will change synchronously, but in opposite directions.
@@ -43,26 +42,41 @@ You can use following definitions in your equation:
 > You may find the calculation of arc length as illustrated below helpful.
 > ![arc_length](images/arc-length-formula.png)
 
-### 2. Coding
+> Write down angular motion function below.
 
-**Please upload all customized python module or template scripts (e.g. `sensored_motor_driver.py`)**
+### 2. (70%) Coding
 
-   Initially, place the robot's driving wheel axle center (**AC**) right on top of the starting point (`checkpoint 4`). Align the robot's heading direction to point `checkpoint 1`
-
-   1. (15%) Let the robot follow the trail from `checkpoint 4` to `checkpoint 1`. Based on the encoder feedback and calculation, stop the robot when **AC** is less than 0.05 m to the `checkpoint 1` (**the closer the better**).
-   2. (5%) Measure and log the distance from **AC** to the `checkpoint 1` here:  
-   3. (15%) Resume driving, let the robot follow the trail from `checkpoint 1` to `checkpoint 2`. Based on the encoder feedback and calculation, stop the robot when **AC** is less than 0.1 m to the `checkpoint 2` (**the closer the better**).
-   4. (5%) Measure and log the distance from **AC** to the `checkpoint 2` here:  
-   5. (15%) Resume driving, let the robot follow the trail from `checkpoint 2` to `checkpoint 3`. Based on the encoder feedback and calculation, stop the robot when **AC** is less than 0.15 m to the `checkpoint 3` (**the closer the better**).
-   6. (5%) Measure and log the distance from **AC** to the `checkpoint 3` here:  
-   7. (15%) Resume the driving, let the robot follow the trail from `checkpoint 3` to `checkpoint 4`. Based on the encoder feedback and calculation, stop the robot when **AC** is less than 0.2 m to the `checkpoint 4` (**the closer the better**).
-   8. (5%) Measure and log the distance from **AC** to the `checkpoint 4` here:  
-
-> Hint:
+> [!IMPORTANT]
 >
-> 1. Wanna drive your robot straight? Read encoder counts on both motors and compare them to regulate motors' on/off states.
-> 2. Turn at a certain angle: $s = r \cdot \theta$, where $s$ is the arc length in **meters**, $r$ is half of the wheel separation distance in **meters**, $\theta$ is the turning angle in **radians**.
+> - Please use math from [Plan Trajectories](#1-plan-trajectories) to code your robot.
+Hard coding linear and angular maneuver is prohibited.
+> - At each checkpoint, the distance from your robot's wheel axle center to the checkpoint will be recorded.
+1% will be taken off for every 1 cm off the checkpoint.
+> - If the robot is not travelling in straight lines, the distance of the furthest location from the trail will be recorded.
+1% will be taken off for every 1 cm off the trail.
+> - Please demo your robot to Dr. Zhang to redeem the credits.
 
-### 2 (20%) Upload a video which records the entire navigation process
+- Start your robot with the wheel axle center at `Start/End/Checkpoint 4` and facing toward `Checkpoint 1`.
+- Run [trail_following.py](trail_following.py) to drive your robot following the trapezoidal trail and visiting `Checkpoint 1`, `Checkpoint 2`, `Checkpoint 3` and `Checkpoint 4` in order.
+- Perform the following movements in sequence.
+   1. (10%) Drive the robot **straightly** forward towards `Checkpoint 1`.
+   Stop the robot at the `Checkpoint 1` for 3 seconds.
+   2. (10%) Spin the robot around the axle center **counter-clockwisely**.
+   Stop the robot when it is heading towards `Checkpoint 2` for 1 second.
+   3. (10%) Drive the robot **straightly** forward towards `Checkpoint 2`.
+   Stop the robot at the `Checkpoint 2` for 3 seconds.
+   4. (10%) Spin the robot around the axle center **clockwisely**.
+   Stop the robot when it is heading towards `Checkpoint 3` for 1 second.
+   5. (10%) Drive the robot **straightly** forward towards `Checkpoint 3`.
+   Stop the robot at the `Checkpoint 3` for 3 seconds.
+   6. (10%) Spin the robot around the axle center **counter-clockwisely**.
+   Stop the robot when it is heading towards `Checkpoint 4` for 1 second.
+   7. (10%) Drive the robot **straightly** forward towards `Checkpoint 4`.
+   Stop the robot at the `Checkpoint 4` and shutdown.
 
-You'll want to modify lines in your [code](trail_follow.py) to reduce the stop time on each checkpoint.
+> [!TIP]
+>
+> - You may want to upload [encoded_motor_driver.py](https://github.com/linzhangUCA/3421example-motor_control/blob/main/encoded_motor_driver.py) to your Pico, so that you can get the encoder counts.
+> - Synchronize left and right motor velocity is the key to drive your robot **straight**.
+> - Define functions to calculate targeted encoder counts from desire distance/angle.
+This can be very helpful for your scripts, and is also useful to verify your math.
