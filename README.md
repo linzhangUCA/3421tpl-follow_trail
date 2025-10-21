@@ -20,11 +20,12 @@ You can use following definitions in your equation:
 - Gear ratio: $i$
 - Encoder's counts per revolution: $CPR$
 
+> Write down linear motion equation below.
+
 > [!TIP]
 > If other quantities than the listed ones are needed.
 > Please introduce them in math language.
 
-> Write down linear motion function below.
 
 #### (20%) 1.2. Encoder Guided Angular Motion
 
@@ -38,18 +39,19 @@ You can use following definitions in your equation:
 - Gear ratio: $i$
 - Encoder's counts per revolution: $CPR$
 
+> Write down angular motion equation(s) below.
+
 > [!TIP]
 > You may find the calculation of arc length as illustrated below helpful.
 > ![arc_length](images/arc-length-formula.png)
 
-> Write down angular motion function below.
 
 ### 2. (70%) Coding
 
 > [!IMPORTANT]
 >
 > - Please use math from [Plan Trajectories](#30-1-plan-trajectories) to code your robot.
-Hard coding linear and angular maneuver is prohibited.
+Hard coding linear and angular maneuver by time is prohibited.
 > - At each checkpoint, the distance from your robot's wheel axle center to the checkpoint will be recorded.
 1% will be taken off for every 1 cm off the checkpoint.
 > - If the robot is not travelling in straight lines, the distance of the furthest location from the trail will be recorded.
