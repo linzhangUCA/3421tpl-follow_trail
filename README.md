@@ -57,7 +57,7 @@ Hard coding linear and angular maneuver is prohibited.
 > - Please demo your robot to Dr. Zhang to redeem the credits.
 
 - Start your robot with the wheel axle center at `Start/End/Checkpoint 4` and facing toward `Checkpoint 1`.
-- Run [trail_following.py](trail_following.py) to drive your robot following the trapezoidal trail and visiting `Checkpoint 1`, `Checkpoint 2`, `Checkpoint 3` and `Checkpoint 4` in order.
+- Complete and run [trail_following.py](trail_following.py) to drive your robot along the trapezoidal trail and visiting `Checkpoint 1`, `Checkpoint 2`, `Checkpoint 3` and `Checkpoint 4` in order.
 - Perform the following movements in sequence.
    1. (10%) Drive the robot **straightly** forward towards `Checkpoint 1`.
    Stop the robot at the `Checkpoint 1` for 3 seconds.
