@@ -18,7 +18,7 @@ You can use following definitions in your equation:
 - Gear ratio: $i$
 - Encoder's counts per revolution: $CPR$
 
-> Write down linear motion equation below.
+> Write down linear motion equation below. 👇
 
 > [!TIP]
 > If other quantities than the listed ones are needed.
@@ -37,7 +37,7 @@ You can use following definitions in your equation:
 - Gear ratio: $i$
 - Encoder's counts per revolution: $CPR$
 
-> Write down angular motion equation(s) below.
+> Write down angular motion equation(s) below. 👇
 
 > [!TIP]
 > You may find the calculation of arc length as illustrated below helpful.
@@ -45,7 +45,7 @@ You can use following definitions in your equation:
 > ![arc_length](images/arc-length-formula.png)
 
 ### 2. (15%) Wiring
-Please upload your wiring diagram below to illustrate how the motors are controlled and monitored.
+Please upload your wiring diagram below to illustrate how the motors are controlled and monitored. 👇
 
 ![wiring](images/wiring_diagram.jpg)
 
