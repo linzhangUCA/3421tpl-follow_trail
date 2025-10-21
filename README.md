@@ -43,6 +43,7 @@ You can use following definitions in your equation:
 
 > [!TIP]
 > You may find the calculation of arc length as illustrated below helpful.
+> **Be careful, the symbols used in graph are different from our definitions.**
 > ![arc_length](images/arc-length-formula.png)
 
 
