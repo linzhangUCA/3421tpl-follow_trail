@@ -3,8 +3,6 @@
 Implement a more precised distance control to follow the trapezoidal trail in the lab.
 Use the encoders to sense and adjust your robot's pose (position and orientation).
 
-![trail_follower](/images/follow_trail.jpg)
-
 ## Requirements
 
 ### (30%) 1. Plan Trajectories
@@ -59,7 +57,7 @@ Hard coding linear and angular maneuver by time is prohibited.
 1% will be taken off for every 1 cm off the trail.
 > - Please demo your robot to Dr. Zhang to redeem the credits.
 
-- Start your robot with the wheel axle center at `Start/End/Checkpoint 4` and facing toward `Checkpoint 1`.
+- Start your robot with the wheel axle center at `Start/End/Checkpoint 4` and facing towards `Checkpoint 1`.
 - Complete and run [trail_following.py](trail_following.py) to drive your robot along the trapezoidal trail and visiting `Checkpoint 1`, `Checkpoint 2`, `Checkpoint 3` and `Checkpoint 4` in order.
 - Perform the following movements in sequence.
    1. (10%) Drive the robot **straightly** forward towards `Checkpoint 1`.
@@ -77,9 +75,10 @@ Hard coding linear and angular maneuver by time is prohibited.
    7. (10%) Drive the robot **straightly** forward towards `Checkpoint 4`.
    Stop the robot at the `Checkpoint 4` and shutdown.
 
+![trail_follower](/images/follow_trail.jpg)
+
 > [!TIP]
 >
 > - You may want to upload [encoded_motor_driver.py](https://github.com/linzhangUCA/3421example-motor_control/blob/main/encoded_motor_driver.py) to your Pico, so that you can get the encoder counts.
 > - Synchronize left and right motor velocity is the key to drive your robot **straight**.
-> - Define functions to calculate targeted encoder counts from desire distance/angle.
-This can be very helpful for your scripts, and is also useful to verify your math.
+> - Define functions using the math from [Plan Trajectories](#30-1-plan-trajectories) to calculate target encoder counts from desired distance/angle.
