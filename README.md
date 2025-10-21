@@ -48,7 +48,7 @@ You can use following definitions in your equation:
 
 > [!IMPORTANT]
 >
-> - Please use math from [Plan Trajectories](#1-plan-trajectories) to code your robot.
+> - Please use math from [Plan Trajectories](#30-1-plan-trajectories) to code your robot.
 Hard coding linear and angular maneuver is prohibited.
 > - At each checkpoint, the distance from your robot's wheel axle center to the checkpoint will be recorded.
 1% will be taken off for every 1 cm off the checkpoint.
