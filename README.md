@@ -29,11 +29,19 @@ You can use following definitions in your equation:
 
 #### 1.2. Encoder Guided Angular Motion
 
-Assume your robot will drive straight forward and the encoder counts will increase on both motors.
-Given your robot's desired travel distance, $d$.
-Please calculate the encoder counts needed on each motor: $C_l$ and $C_r$.
+Assume your robot will spin around the center of the wheel axle for a desired angle, $\theta$.
+The encoder counts on left motor, $C_l$, and the encoder counts on right motor $C_r$, will change synchronously, but in opposite directions.
+Please write down one equation or two for calculating the targeted encoder counts, $C_l$ and $C_r$, given the desired spinning angle, $\theta$.
+You can use following definitions in your equation:
 
-![arc_length](arc-length-formula.png)
+- Wheel axle length: $L$
+- Wheel radius: $r$
+- Gear ratio: $i$
+- Encoder's counts per revolution: $CPR$
+
+> [!TIP]
+> You may find the calculation of arc length as illustrated below helpful.
+> ![arc_length](images/arc-length-formula.png)
 
 ### 2. Coding
 
