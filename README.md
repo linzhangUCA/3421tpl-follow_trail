@@ -5,9 +5,9 @@ Use the encoders to sense and adjust your robot's pose (position and orientation
 
 ## Requirements
 
-### (30%) 1. Plan Trajectories
+### (15%) 1. Plan Trajectories
 
-#### (10%) 1.1. Encoder Guided Linear Motion
+#### (5%) 1.1. Encoder Guided Linear Motion
 
 Assume your robot will drive **straight** forward for a desired distance, $d$.
 The encoder counts, $C$, on both motors will increase to a targeted value, synchronously.
@@ -25,7 +25,7 @@ You can use following definitions in your equation:
 > Please introduce them in math language.
 
 
-#### (20%) 1.2. Encoder Guided Angular Motion
+#### (10%) 1.2. Encoder Guided Angular Motion
 
 Assume your robot will spin around the center of the wheel axle for a desired angle, $\theta$.
 The encoder counts on left motor, $C_l$, and the encoder counts on right motor $C_r$, will change synchronously, but in opposite directions.
@@ -44,8 +44,12 @@ You can use following definitions in your equation:
 > **Be careful, the symbols used in graph are different from our definitions.**
 > ![arc_length](images/arc-length-formula.png)
 
+### 2. (15%) Wiring
+Please upload your wiring diagram below to illustrate how the motors are controlled and monitored.
 
-### 2. (70%) Coding
+![wiring](images/wiring_diagram.jpg)
+
+### 3. (70%) Coding
 
 > [!IMPORTANT]
 >
